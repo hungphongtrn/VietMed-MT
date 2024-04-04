@@ -1,0 +1,4 @@
+MODEL: google/mt5-base
+source_lang: vi
+target_lang: en
+train_ds_name: quan246/doc_train

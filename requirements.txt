@@ -2,3 +2,5 @@ datasets
 evaluate
 numpy
 transformers
+wandb
+fire

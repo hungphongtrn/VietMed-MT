@@ -1,6 +1,14 @@
-WANDB_PROJECT=vietmed_mt_finetune \
-# CUDA_VISIBLE_DEVICES=0 \
-python finetune_vietai_en-vi.py \
-python finetune_vietai_vi-en.py \ 
-python finetune_vinai_en-vi.py \
-python finetune_vinai_vi-en.py
+#!/bin/bash
+
+# Directory containing the YAML files
+CONFIG_DIR="./configs"
+
+# Iterate over each YAML file in the configs directory
+for config_file in "$CONFIG_DIR"/*.yaml; do
+  echo "Processing $config_file..."
+  
+  # Run the Python script with the current config file
+  python boiler.py --config_path="$config_file"
+done
+
+echo "All configurations processed."

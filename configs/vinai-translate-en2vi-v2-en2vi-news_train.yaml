@@ -1,0 +1,4 @@
+MODEL: vinai/vinai-translate-en2vi-v2
+source_lang: en
+target_lang: vi
+train_ds_name: quan246/news_train
