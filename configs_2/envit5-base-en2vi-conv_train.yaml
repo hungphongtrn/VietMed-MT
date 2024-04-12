@@ -1,0 +1,4 @@
+MODEL: VietAI/envit5-base
+source_lang: en
+target_lang: vi
+train_ds_name: quan246/conv_train
